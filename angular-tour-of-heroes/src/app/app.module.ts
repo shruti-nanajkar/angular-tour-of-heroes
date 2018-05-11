@@ -5,12 +5,14 @@ import { FormsModule } from '@angular/forms'; //ngModule lives here
 
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
+import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeroesComponent
+    HeroesComponent,
+    HeroDetailComponent
   ],
   imports: [ //external modules that ar eimported should go here i.e FormsModule
     BrowserModule,
