@@ -1,12 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms'; //ngModule lives here
-
+import { FormsModule } from '@angular/forms'; //NgModel lives here
 
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
-
 
 @NgModule({
   declarations: [
@@ -14,9 +12,9 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
     HeroesComponent,
     HeroDetailComponent
   ],
-  imports: [ //external modules that ar eimported should go here i.e FormsModule
+  imports: [
     BrowserModule,
-    FormsModule
+    FormsModule //add the external modules here
   ],
   providers: [],
   bootstrap: [AppComponent]
